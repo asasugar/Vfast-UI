@@ -1,0 +1,25 @@
+{
+  "name": "@vfast/stylelint-config",
+  "version": "1.0.0",
+  "description": "stylelint config of vfast.",
+  "main": "index.js",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/asasugar/vfast-ui.git",
+    "directory": "packages/vfast-stylelint-config"
+  },
+  "bugs": "https://github.com/asasugar/vfast-ui/issues",
+  "author": "asasugar",
+  "license": "MIT",
+  "dependencies": {
+    "stylelint-config-prettier": "^8.0.1",
+    "stylelint-config-standard": "^22.0.0"
+  },
+  "devDependencies": {
+    "stylelint": "^13.0.0"
+  }
+}

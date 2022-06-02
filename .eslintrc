@@ -1,0 +1,7 @@
+{
+  "root": true,
+  "extends": ["@vfast"],
+  "rules": {
+    "prefer-object-spread": "off"
+  }
+}

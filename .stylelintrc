@@ -1,0 +1,3 @@
+{
+  "extends": ["@vfast/stylelint-config"]
+}
