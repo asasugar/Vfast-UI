@@ -1,9 +1,4 @@
----
-home: true
-heroText: null
-tagline: null
---- 
-<div class="home">
+<template><div><div class="home">
   <h1 class="title">VFast-UI</h1>
   <h1 class="subtitle">Vue3 移动端组件库。</h1>
   <p class="content">
@@ -31,6 +26,7 @@ tagline: null
     </div>
   </div>
 </div>
+</div></template>
 
 <script setup>
 const bottomList = [
@@ -178,4 +174,3 @@ const bottomList = [
   }
 }
 </style>
-
