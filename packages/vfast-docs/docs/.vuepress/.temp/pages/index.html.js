@@ -11,11 +11,16 @@ export const data = {
   "excerpt": "",
   "headers": [],
   "git": {
-    "updatedTime": 1654167183000,
+    "updatedTime": 1654187519000,
     "contributors": [
       {
         "name": "xiongjie.xue",
         "email": "xiongjie.xue@lkcoffee.com",
+        "commits": 1
+      },
+      {
+        "name": "xiongjie.xue",
+        "email": "xiongjie.xue@luckincoffee.com",
         "commits": 1
       }
     ]

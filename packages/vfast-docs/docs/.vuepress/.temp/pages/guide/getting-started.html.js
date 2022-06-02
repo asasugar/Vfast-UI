@@ -21,8 +21,14 @@ export const data = {
     }
   ],
   "git": {
-    "updatedTime": null,
-    "contributors": []
+    "updatedTime": 1654187519000,
+    "contributors": [
+      {
+        "name": "xiongjie.xue",
+        "email": "xiongjie.xue@luckincoffee.com",
+        "commits": 1
+      }
+    ]
   },
   "filePathRelative": "guide/getting-started.md"
 }
