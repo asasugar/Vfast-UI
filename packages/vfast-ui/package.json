@@ -1,0 +1,63 @@
+{
+  "name": "vfast-ui",
+  "version": "1.0.0-Alpha.0",
+  "description": "Mobile UI Components built on Vue3",
+  "main": "lib/vfast-ui.cjs.js",
+  "module": "es/index.mjs",
+  "style": "lib/index.css",
+  "typings": "lib/index.d.ts",
+  "unpkg": "lib/vfast-ui.min.js",
+  "jsdelivr": "lib/vfast-ui.min.js",
+  "files": [
+    "es",
+    "lib"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "lint": "eslint . --fix --ext .js,.ts,.vue"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/asasugar/vfast.git",
+    "directory": "packages/vfast-ui"
+  },
+  "bugs": "https://github.com/asasugar/vfast/issues",
+  "author": "asasugar",
+  "license": "MIT",
+  "keywords": [
+    "ui",
+    "vue",
+    "vue3",
+    "mobile",
+    "frontend",
+    "component",
+    "components"
+  ],
+  "peerDependencies": {
+    "vue": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^16",
+    "@vfast/eslint-config": "workspace:*",
+    "@vitejs/plugin-vue": "^2.3.1",
+    "@vitejs/plugin-vue-jsx": "^1.3.10",
+    "@vue/runtime-core": "^3.2.27",
+    "@vue/test-utils": "^2.0.0-rc.16",
+    "typescript": "~4.5.2",
+    "unplugin-vue-define-options": "^0.6.1",
+    "vite": "^2.9.9",
+    "vue": "^3.2.27",
+    "vue-router": "^4.0.12",
+    "vue-tsc": "^0.35.2"
+  },
+  "sideEffects": [
+    "es/**/style/*",
+    "lib/**/style/*",
+    "*.css",
+    "*.less"
+  ]
+}

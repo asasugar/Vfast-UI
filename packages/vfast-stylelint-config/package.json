@@ -9,10 +9,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/asasugar/vfast-ui.git",
+    "url": "https://github.com/asasugar/vfast.git",
     "directory": "packages/vfast-stylelint-config"
   },
-  "bugs": "https://github.com/asasugar/vfast-ui/issues",
+  "bugs": "https://github.com/asasugar/vfast/issues",
   "author": "asasugar",
   "license": "MIT",
   "dependencies": {

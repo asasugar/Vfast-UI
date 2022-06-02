@@ -1,17 +1,14 @@
 {
-  "name": "vfast-ui",
-  "version": "1.0.0",
-  "description": "Mobile UI Components built on Vue3",
   "private": true,
   "scripts": {
     "prepare": "husky install",
     "preinstall": "npx only-allow pnpm",
-    "dev": "pnpm --dir ./packages/vfast dev",
-    "lint": "pnpm --dir ./packages/vfast lint",
-    "test": "pnpm --dir ./packages/vfast test",
-    "test:watch": "pnpm --dir ./packages/vfast test:watch",
-    "build": "pnpm --dir ./packages/vfast build",
-    "build:site": "pnpm --dir ./packages/vfast build:site"
+    "dev": "pnpm --dir ./packages/vfast-ui dev",
+    "docs:dev": "pnpm --dir ./packages/vfast-docs docs:dev",
+    "lint": "pnpm --dir ./packages/vfast-ui lint",
+    "test": "pnpm --dir ./packages/vfast-ui test",
+    "test:watch": "pnpm --dir ./packages/vfast-ui test:watch",
+    "build": "pnpm --dir ./packages/vfast-ui build"
   },
   "lint-staged": {
     "*.md": "prettier --write",
@@ -33,15 +30,15 @@
     "component",
     "vue",
     "mobile",
-    "vfast-ui"
+    "vfast"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/asasugar/vfast-ui.git"
+    "url": "git+https://github.com/asasugar/vfast.git"
   },
-  "homepage": "https://github.com/asasugar/vfast-ui#readme",
+  "homepage": "https://github.com/asasugar/vfast#readme",
   "bugs": {
-    "url": "https://github.com/asasugar/vfast-ui/issues"
+    "url": "https://github.com/asasugar/vfast/issues"
   },
   "author": "asasugar",
   "license": "ISC",
