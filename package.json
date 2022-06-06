@@ -1,14 +1,16 @@
 {
   "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
     "prepare": "husky install",
     "preinstall": "npx only-allow pnpm",
-    "dev": "pnpm --dir ./packages/vfast-ui dev",
-    "docs:dev": "pnpm --dir ./packages/vfast-docs docs:dev",
-    "lint": "pnpm --dir ./packages/vfast-ui lint",
-    "test": "pnpm --dir ./packages/vfast-ui test",
-    "test:watch": "pnpm --dir ./packages/vfast-ui test:watch",
-    "build": "pnpm --dir ./packages/vfast-ui build"
+    "dev": "pnpm run -C ./packages/vfast-ui dev",
+    "dev:docs": "pnpm run -C ./packages/vfast-docs dev:docs",
+    "build": "pnpm run -C ./packages/vfast-ui build",
+    "build:docs": "pnpm run -C ./packages/vfast-docs build:docs",
+    "lint": "pnpm run -C ./packages/vfast-ui lint"
   },
   "lint-staged": {
     "*.md": "prettier --write",

@@ -1,6 +1,7 @@
 {
   "extends": "../../tsconfig",
   "compilerOptions": {
+    "resolveJsonModule": true,
     "allowJs": true,
     "noImplicitThis": true
   },

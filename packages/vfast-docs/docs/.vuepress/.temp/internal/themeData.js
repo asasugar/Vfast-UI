@@ -24,7 +24,12 @@ export const themeData = {
     },
     {
       "text": "基础组件",
-      "children": []
+      "children": [
+        {
+          "text": "按钮",
+          "link": "/basic-components/button"
+        }
+      ]
     },
     {
       "text": "表单组件",

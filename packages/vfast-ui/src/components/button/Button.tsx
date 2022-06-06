@@ -7,18 +7,17 @@ import {
 
 // Utils
 import {
-  extend,
   numericProp,
   preventDefault,
   makeStringProp,
   createNamespace,
   BORDER_SURROUND,
-} from '../utils';
-import { useRoute, routeProps } from '../composables/use-route';
+} from '../../utils';
+import { useRoute, routeProps } from '../../hooks/use-route';
 
 // Components
-import { Icon } from '../icon';
-import { Loading, LoadingType } from '../loading';
+// import { Icon } from '../icon';
+// import { Loading, LoadingType } from '../loading';
 
 // Types
 import {
@@ -30,7 +29,7 @@ import {
 
 const [name, bem] = createNamespace('button');
 
-const buttonProps = extend({}, routeProps, {
+const buttonProps = Object.assign({}, routeProps, {
   tag: makeStringProp<keyof HTMLElementTagNameMap>('button'),
   text: String,
   icon: String,
@@ -44,12 +43,12 @@ const buttonProps = extend({}, routeProps, {
   loading: Boolean,
   hairline: Boolean,
   disabled: Boolean,
-  iconPrefix: String,
+  // iconPrefix: String,
   nativeType: makeStringProp<ButtonNativeType>('button'),
   loadingSize: numericProp,
-  loadingText: String,
-  loadingType: String as PropType<LoadingType>,
-  iconPosition: makeStringProp<ButtonIconPosition>('left'),
+  // loadingText: String,
+  // loadingType: String as PropType<LoadingType>,
+  // iconPosition: makeStringProp<ButtonIconPosition>('left'),
 });
 
 export type ButtonProps = ExtractPropTypes<typeof buttonProps>;
@@ -61,47 +60,47 @@ export default defineComponent({
 
   emits: ['click'],
 
-  setup(props, { emit, slots }) {
+  setup (props, { emit, slots }) {
     const route = useRoute();
 
-    const renderLoadingIcon = () => {
-      if (slots.loading) {
-        return slots.loading();
-      }
+    // const renderLoadingIcon = () => {
+    //   if (slots.loading) {
+    //     return slots.loading();
+    //   }
 
-      return (
-        <Loading
-          size={props.loadingSize}
-          type={props.loadingType}
-          class={bem('loading')}
-        />
-      );
-    };
+    //   return (
+    //     <Loading
+    //       size={props.loadingSize}
+    //       type={props.loadingType}
+    //       class={bem('loading')}
+    //     />
+    //   );
+    // };
 
-    const renderIcon = () => {
-      if (props.loading) {
-        return renderLoadingIcon();
-      }
+    // const renderIcon = () => {
+    //   if (props.loading) {
+    //     return renderLoadingIcon();
+    //   }
 
-      if (slots.icon) {
-        return <div class={bem('icon')}>{slots.icon()}</div>;
-      }
+    //   if (slots.icon) {
+    //     return <div class={bem('icon')}>{slots.icon()}</div>;
+    //   }
 
-      if (props.icon) {
-        return (
-          <Icon
-            name={props.icon}
-            class={bem('icon')}
-            classPrefix={props.iconPrefix}
-          />
-        );
-      }
-    };
+    //   if (props.icon) {
+    //     return (
+    //       <Icon
+    //         name={props.icon}
+    //         class={bem('icon')}
+    //         classPrefix={props.iconPrefix}
+    //       />
+    //     );
+    //   }
+    // };
 
     const renderText = () => {
       let text;
       if (props.loading) {
-        text = props.loadingText;
+        // text = props.loadingText;
       } else {
         text = slots.default ? slots.default() : props.text;
       }
@@ -156,7 +155,7 @@ export default defineComponent({
         disabled,
         hairline,
         nativeType,
-        iconPosition,
+        // iconPosition,
       } = props;
 
       const classes = [
@@ -185,9 +184,9 @@ export default defineComponent({
           onClick={onClick}
         >
           <div class={bem('content')}>
-            {iconPosition === 'left' && renderIcon()}
+            {/* {iconPosition === 'left' && renderIcon()} */}
             {renderText()}
-            {iconPosition === 'right' && renderIcon()}
+            {/* {iconPosition === 'right' && renderIcon()} */}
           </div>
         </tag>
       );

@@ -3,13 +3,13 @@
     "baseUrl": ".",
     "jsx": "preserve",
     "strict": true,
-    "target": "ES2015",
     "module": "ESNext",
+    "target": "es2017",
     "skipLibCheck": true,
     "esModuleInterop": true,
     "moduleResolution": "Node",
     "lib": ["esnext", "dom"]
-  },
+  }
   // "include": ["packages"],
   // "exclude": ["node_modules", "dist"]
 }

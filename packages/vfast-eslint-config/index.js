@@ -3,14 +3,14 @@ module.exports = {
     'plugin:vue/vue3-recommended',
     'airbnb-base',
     'plugin:@typescript-eslint/recommended',
-    'prettier',
+    'prettier'
   ],
 
   parserOptions: {
     parser: '@typescript-eslint/parser',
     ecmaVersion: 2019,
     sourceType: 'module',
-    extraFileExtensions: ['.vue'],
+    extraFileExtensions: ['.vue']
   },
 
   plugins: ['@typescript-eslint'],
@@ -19,7 +19,7 @@ module.exports = {
     es6: true,
     node: true,
     jest: true,
-    browser: true,
+    browser: true
   },
 
   rules: {
@@ -46,6 +46,7 @@ module.exports = {
     'import/prefer-default-export': 'off',
     'import/no-extraneous-dependencies': 'off',
     // eslint-plugin-vue
+    'vue/valid-template-root': 'off',
     'vue/no-v-html': 'off',
     'vue/attributes-order': 'off',
     'vue/require-v-for-key': 'off',
@@ -62,19 +63,19 @@ module.exports = {
     '@typescript-eslint/no-empty-function': 'off',
     '@typescript-eslint/no-non-null-assertion': 'off',
     '@typescript-eslint/explicit-function-return-type': 'off',
-    '@typescript-eslint/explicit-module-boundary-types': 'off',
+    '@typescript-eslint/explicit-module-boundary-types': 'off'
   },
 
   overrides: [
     {
       files: ['*.vue'],
-      parser: require.resolve('vue-eslint-parser'),
+      parser: require.resolve('vue-eslint-parser')
     },
     {
       files: ['**/*.md/*.js', '**/*.md/*.ts'],
       rules: {
-        '@typescript-eslint/no-unused-vars': 'off',
-      },
-    },
-  ],
+        '@typescript-eslint/no-unused-vars': 'off'
+      }
+    }
+  ]
 };

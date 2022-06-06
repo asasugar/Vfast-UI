@@ -1,2 +1,3 @@
-import VButton from './button';
+import VButton from './components/button';
+
 export { VButton };
